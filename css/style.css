@@ -207,6 +207,27 @@ img {
   display: flex;
 }
 
+/* Tags in the cards */
+.tags-purple {
+  background-color: purple;
+}
+.tags-violet {
+  background-color: violet;
+}
+.tags-pink {
+  background-color: pink;
+}
+.tags-orange {
+  background-color: orange;
+}
+
+.tags-crimson {
+  background-color: crimson;
+}
+.tags-yellow {
+  background-color: yellow;
+}
+
 /* Missed Post with Grid */
 
 .grid-cards {
