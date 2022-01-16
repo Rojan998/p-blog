@@ -24,6 +24,16 @@ body {
   color: var(--clr-secondary);
 }
 
+h1,
+h2,
+h3,
+h4,
+span,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .bullet-li {
   list-style: disc;
 }
@@ -79,6 +89,13 @@ section {
   border: 1px solid white;
   background-color: none;
   font-size: 0.9rem;
+}
+
+.btn-square {
+  display: inline-block;
+  padding: 0.5rem 5rem;
+  margin-top: 1rem;
+  border-radius: none;
 }
 
 .button-groups {
@@ -277,4 +294,94 @@ img {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+}
+
+/* Customer Parallax */
+.customer-image-parallax {
+  background: url(/img/img-4.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  max-width: 100%;
+  height: 20vh;
+}
+
+.customer-image-content {
+  display: flex;
+  align-items: center;
+  padding: 2rem 3rem;
+  justify-content: space-between;
+}
+
+/* Pricing Plan */
+
+.pricing-para {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+.plan-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.plan-card {
+  margin-bottom: 0;
+  position: relative;
+  text-align: center;
+  line-height: 1;
+  color: black;
+  background: rgb(80, 75, 75);
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.plan-card-price-box-basic {
+  text-transform: uppercase;
+  position: absolute;
+  background-color: rgb(73, 194, 202);
+  padding: 1rem 1rem;
+  top: -15%;
+  border-radius: 12px;
+}
+.plan-card-price-box-premium {
+  text-transform: uppercase;
+  position: absolute;
+  background-color: rgb(62, 235, 62);
+  padding: 1rem 1rem;
+  top: -15%;
+  border-radius: 12px;
+}
+.plan-card-price-box-ultimate {
+  text-transform: uppercase;
+  position: absolute;
+  background-color: orangered;
+  padding: 1rem 1rem;
+  top: -15%;
+  border-radius: 12px;
+}
+.choose-plan-premium .btn-square {
+  background-color: rgb(62, 235, 62);
+}
+.choose-plan-ultimate .btn-square {
+  background-color: orangered;
+}
+.tick-green {
+  color: rgb(0, 255, 0);
+}
+.cross-red {
+  color: red;
+}
+.pricing-list {
+  text-align: start;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.pricing-list li i {
+  margin-right: 1rem;
 }
