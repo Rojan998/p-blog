@@ -385,3 +385,31 @@ img {
 .pricing-list li i {
   margin-right: 1rem;
 }
+
+/* Subscribe to NewsLetter */
+
+.subscribe-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-form {
+  margin-left: 20%;
+  background-color: rgb(80, 75, 75);
+  padding: 1.5rem 3rem;
+  border-radius: 20px;
+}
+.subscribe-form input {
+  background-color: rgb(80, 75, 75);
+  color: white;
+  border: none;
+  font: 1rem;
+}
+.subscribe-form input:focus::placeholder {
+  border: none;
+}
+::placeholder {
+  color: white;
+  border: none;
+}
